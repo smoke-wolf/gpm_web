@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    column-gap: 5vw;
+    padding-top: 2vw;
+    background-color: #000;
+    font-size: 1.1vw;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw    ;
+}
+
+.container button{
+    width: 10vw;
+    height: 3vw;
+    cursor: pointer;
+    background-color: #5a65ff;
+    border: none;
+    border-radius: .2vw;
+    color: #fff;
+    transition: 0.5s ease;
+    transition-property: background-color;
+}
+
+.container button:hover{
+    background-color: #ffffff;
+    color: #000;
+
+}
+
+.display {
+    display: grid;
+}
+
+.display-none {
+    display: none;
+}
+
+.tog{
+    width: 30vw;
+    justify-content: center;
+    grid-auto-flow: row;
+    row-gap: 2vw;
+}
+
+.install {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.install input{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 3vw;
+    width: 25vw;
+    border: none;
+    border-radius: 0.2vw;
+}
+
+.install input:focus{
+    outline: #5a65ff 0.2vw solid;
+    outline-offset: 0.2vw;
+}
+
+.install h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.install button {
+    grid-row-start: 3;
+    width: 10vw;
+    height: 3vw;
+    background-color: #bd5555;
+    border: none;
+    color: #fff;
+    border-radius: 0.2vw;
+    cursor: pointer;
+}
+
+.install button:hover{
+    background-color: #da6969;
+}
