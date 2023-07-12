@@ -11,11 +11,12 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   };
 
   fetch("http://localhost:5000/auth", {
-    method: "POST",
-    headers: {
-    },
-    body: JSON.stringify(data)
-  })
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data)
+})
   .then(response => {
     if (response.ok) {
       // Login successful, redirect to another page
